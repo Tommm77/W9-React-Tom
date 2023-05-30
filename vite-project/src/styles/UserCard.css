@@ -1,0 +1,29 @@
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-around;
+}
+
+li {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: calc((100% / 3) - 20px);
+}
+
+.blue_card {
+  text-align: center;
+  background-color: #0000ff;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.white_card {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
