@@ -1,0 +1,115 @@
+.todo-list {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  margin-top: 100px;
+}
+
+.todo-list ul {
+  display: block !important;
+  padding: 0;
+  list-style-type: none;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+
+.todo-list button {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-list button:hover {
+  background-color: #0056b3;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+.todo-list input[type="checkbox"] {
+  display: none;
+}
+
+.todo-list input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.todo-list input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.todo-list input[type="checkbox"]:checked + label:before {
+  background: #007BFF;
+}
+
+.todo-list input[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -14px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.delete {
+  margin-left: 40% !important;
+}
+
+.add {
+  margin-left: 25px !important;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+

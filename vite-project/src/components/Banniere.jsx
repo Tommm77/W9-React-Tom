@@ -8,6 +8,7 @@ function Banniere() {
     <h1>Bienvenue sur Blogeo</h1>
     <Link to ="/">Accueil</Link>
     <Link to="/userInfos">Card</Link>
+    <Link to="/TodoList">TodoList</Link>
     </div>
   )
 }

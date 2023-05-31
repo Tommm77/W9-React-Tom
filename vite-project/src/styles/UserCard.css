@@ -1,12 +1,12 @@
 
-ul {
+ ul {
   display: flex;
   list-style-type: none;
   padding: 0;
   justify-content: space-around;
 }
 
-li {
+ li {
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
