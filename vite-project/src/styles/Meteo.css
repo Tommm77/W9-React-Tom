@@ -1,0 +1,85 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px #ddd;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.search-button:hover {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-100px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(200px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-400px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(400px, 0, 0);
+  }
+}
+
+.history {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+}
+
+.history h2 {
+  margin-top: 0;
+}
+
+.history ul {
+  padding-left: 20px;
+}
+
+
+.autocomplete {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 100px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 0 0 4px 4px;
+}
+
+.autocomplete li {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.autocomplete li:hover {
+  background-color: #f0f0f0;
+}

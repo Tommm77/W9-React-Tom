@@ -1,5 +1,6 @@
 import '../styles/Banniere.css'
 import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Banniere() {
   return (
@@ -9,6 +10,7 @@ function Banniere() {
     <Link to ="/">Accueil</Link>
     <Link to="/userInfos">Card</Link>
     <Link to="/TodoList">TodoList</Link>
+    <Link to="/Meteo">Meteo</Link>
     </div>
   )
 }
